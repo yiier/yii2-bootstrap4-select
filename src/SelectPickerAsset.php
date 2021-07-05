@@ -8,20 +8,23 @@
 namespace yiier\bootstrap4\select;
 
 use yii\bootstrap4\BootstrapAsset;
+use yii\bootstrap4\BootstrapPluginAsset;
 use yii\web\AssetBundle;
 use yii\web\JqueryAsset;
 
-class SelectWidgetAsset extends AssetBundle
+class SelectPickerAsset extends AssetBundle
 {
     public $sourcePath = '@bower/bootstrap-select/dist';
     public $js = [
-        'js/bootstrap-select.js',
+        'js/bootstrap-select.min.js',
     ];
     public $css = [
-        'css/bootstrap-select.css',
+        'css/bootstrap-select.min.css',
     ];
+
     public $depends = [
         JqueryAsset::class,
         BootstrapAsset::class,
+        BootstrapPluginAsset::class
     ];
 }

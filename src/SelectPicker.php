@@ -10,7 +10,7 @@ namespace yiier\bootstrap4\select;
 use yii\bootstrap4\InputWidget;
 use yii\helpers\Html;
 
-class SelectWidget extends InputWidget
+class SelectPicker extends InputWidget
 {
     /**
      * @var string the template to render the input.
@@ -48,7 +48,7 @@ class SelectWidget extends InputWidget
      */
     protected function registerPlugin($name)
     {
-        SelectWidgetAsset::register($this->view);
+        SelectPickerAsset::register($this->view);
         parent::registerPlugin($name);
     }
 }

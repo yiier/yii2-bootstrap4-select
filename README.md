@@ -36,12 +36,10 @@ Usage
 
 ```php
 <?php
-use yiier\bootstrap4\select\SelectWidget;
-use yiier\bootstrap4\select\SelectWidgetAsset;
+use yiier\bootstrap4\select\SelectPicker;
 
-SelectWidgetAsset::register($this);
 
-echo $form->field($model, 'attribute')->widget(SelectWidget::class, [
+echo $form->field($model, 'attribute')->widget(SelectPicker::class, [
     'items' => ArrayHelper::map(User::find()->all(), 'id', 'email'),
     'options' => [
         'prompt' => '',
