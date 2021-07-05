@@ -54,3 +54,8 @@ echo $form->field($model, 'attribute')->widget(SelectPicker::class, [
     'clientEvents' => [],
 ]) ?>
 ```
+
+Credits
+--------
+
+[romeyk/yii2-bootstrap-select](https://github.com/romeyk/yii2-bootstrap-select)
